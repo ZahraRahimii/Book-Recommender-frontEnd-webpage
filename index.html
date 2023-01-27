@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> The Whole Fucking Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- menu -->
+    <header class="menu_container">
+        <a href="#" class="logo"> </a>
+
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="icon" for="side-menu">
+            <span class="icon-line"></span>
+        </label>
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#header_container"> 01 START </a></li>
+                <li><a href="#lectures_container"> 02 COURSE LECTURES</a> </li>
+                <li><a href="#books_container"> 03 RELATED BOOKS </a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <DIV id="header_container">
+        <div class="header_content">
+            <div class="title">
+                <p>
+                    INTERNET 
+                    <br>
+                    ENGINEERING
+                </p>
+            </div>
+            <div class="caption">
+                <p>
+                    IS WHAT WE ARE GOING TO <br> LEARN IN THIS COURSE
+                </p>
+            </div>
+            <!-- <br><br><br><br> -->
+            <a href="#books_container" class="related_books">
+                SEE THIS COURSE RELEATED BOOKS
+            </a> 
+        </div>
+    </DIV>
+    <!-- <br><br><br><br><br><br><br><br> -->
+    <DIV id="lectures_container">
+        <div class="cards">
+            <div class="http">
+                <img src="images/http_icon.png" class="logo">
+                <h3>HTTP</h3>
+                <p>
+                    The Hypertext Transfer Protocol (HTTP) is an application layer protocol.<br> Communication between client computers and web servers is done by sending HTTP Requests and recieving HTTP resoponses.
+                </p>
+            </div>
+            <div class="html_css">
+                <img src="images/css_icon.png" class="logo">
+                <h3>HTML CSS</h3>
+                <p>
+                    HTML(HyperText Markup Language) is the standard markup language for Web pages. CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed
+                </p>
+            </div>
+            <div class="js">
+                <img src="images/js_icon.png" class="logo">
+                <h3>JAVASCRIPT</h3>
+                <p>
+                    JavaScript often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. JavaScript is a high-level, often just-in-time compiled language.
+                </p>
+            </div>
+            <div class="golang">
+                <img src="images/go_icon.png" class="logo">
+                <h3>GOLANG</h3>
+                <p>
+                    Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but with memory safety and structural typing.
+                </p>
+            </div>
+        </div>
+    </DIV>
+    <!-- <br><br><br><br><br><br> -->
+    <!-- <main>sf</main> -->
+    <DIV id="books_container">
+        <h1> MOST POPULAR BOOKS</h1>
+        <div class="guide_cards">
+            <div class="left_card">
+                <section class="js_guide">
+                    <img class="logo_guide">
+                    <p class="on_pic1"> JAVASCRIPT </p>
+                    <p class="on_pic2"> GUIDE</p> 
+                    <div class="discription">
+                        <br>
+                        <p>By Daivid Flanagan</p> <br>
+                        <p>By Daivid Flanagan</p> <br>
+                        <p>By Daivid Flanagan</p> <br>
+                    </div>
+                </section>
+                <section class="js_info">
+                    <p class="cost"> Cost: 12$ </p>
+                    <p class="button_des"> Press the button to be redirected to the shopping site </p>
+                    <a href="#js_pop_up" class="buy_button"> BUY </a>
+                </section>
+            </div>
+            <div class="middle_card">
+                <section class="react_guide">
+                    <img class="logo_guide">
+                    <p class="on_pic1"> ROAD TO </p>
+                    <p class="on_pic2"> REACT</p>
+                    <div class="discription">
+                        <br>
+                        <p>By Daivid Flanagan</p> <br>
+                        <p>By Daivid Flanagan</p> <br>
+                        <p>By Daivid Flanagan</p> <br>
+                    </div>
+                </section>
+                <section class="react_info">
+                    <p class="cost"> Cost: 12$ </p>
+                    <p class="button_des"> Press the button to be redirected to the shopping site </p>
+                    <a href="#react_pop_up" class="buy_button"> BUY </a>
+                </section>
+            </div>
+            <div class="right_card">
+                <section class="go_guide">
+                    <img class="logo_guide">
+                    <p class="on_pic1"> INTORDUCING </p>
+                    <p class="on_pic2"> GO </p>
+                    <div class="discription">
+                        <br>
+                        <p>By Daivid Flanagan</p> <br>
+                        <p>By Daivid Flanagan</p> <br>
+                        <p>By Daivid Flanagan</p> <br>
+                    </div>
+                </section>
+                <section class="go_info">
+                    <p class="cost"> Cost: 12$ </p>
+                    <p class="button_des"> Press the button to be redirected to the shopping site </p>
+                    <a href="#go_pop_up" class="buy_button"> BUY </a>
+                </section>
+                </div>
+        </div>
+        <div id="js_pop_up" class="pop_up">
+            <a href="#books_container" class="close">&Cross;</a>
+            <img class="js_book_pic">
+            <div class="js_book_info">
+                <h4> Start Reading Now</h4>
+                <p>
+                    JavaScript is the programming language of the web and is used by more software developers today than any other programming language. For nearly 25 years this best seller has been the go-to guide for JavaScript programmers. The seventh edition is fully updated to cover the 2020 version of JavaScript, and new chapters cover classes, modules, iterators, generators, Promises, async/await, and metaprogramming. You’ll find illuminating and engaging example code throughout.
+                    This book is for programmers who want to learn JavaScript and for web developers who want to take their understanding and mastery to the next level.
+                </p>
+            </div>
+            <a href="https://www.amazon.com/gp/product/1491952024/" target="_blank" class="buy_now_button"> BUY NOW </a>
+        </div>
+        <div id="react_pop_up" class="pop_up">
+            <a href="#books_container" class="close">&Cross;</a>
+            <img class="react_book_pic">
+            <div class="react_book_info">
+                <h4> Start Reading Now</h4>
+                <p>
+                    In "The Road to React" you will learn about all the fundamentals of React.js with Hooks while building a full-blown React application step by step. While you create the React application, every chapter will introduce you to a new React key feature.
+                    <br>
+                    Fundamentals of React:
+                    <li>Hello React</li> 
+                    <li>Requirements</li>
+                    <li>Setting up a React Project</li>
+                    <li>Meet the React Component</li>
+                    <li>React JSX</li>
+                    <li>Lists in React</li>
+                    <!-- Meet another React Component
+                    React Component Instantiation
+                    ReactDOM
+                    React Component Definition (Advanced)
+                    Handler Function in JSX -->
+                </p>
+            </div>
+            <a href="https://www.amazon.com/Road-learn-React-pragmatic-React-js/dp/172004399X/ref=d_pd_sbs_sccl_2_3/130-5751593-0029724?pd_rd_w=m9yJh&content-id=amzn1.sym.3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_p=3676f086-9496-4fd7-8490-77cf7f43f846&pf_rd_r=MN81G3T0MAX9FR9FAENV&pd_rd_wg=XsyuS&pd_rd_r=c3fff6b6-0e60-41bd-b038-2e16c81b5390&pd_rd_i=172004399X&psc=1" target="_blank" class="buy_now_button"> BUY NOW </a>
+        </div>
+        <div id="go_pop_up" class="pop_up">
+            <a href="#books_container" class="close">&Cross;</a>
+            <img class="go_book_pic">
+            <div class="go_book_info">
+                <h4> Start Reading Now</h4>
+                <p>
+                    Perfect for beginners familiar with programming basics, this hands-on guide provides an easy introduction to Go, the general-purpose programming language from Google. Author Caleb Doxsey covers the language's core features with step-by-step instructions and exercises in each chapter to help you practice what you learn.
+                    Go is a general-purpose programming language with a clean syntax and advanced features, including concurrency.
+
+                </p>
+            </div>
+            <a href="https://www.amazon.fr/dp/1491941952?psc=1&th=1&linkCode=gs2&tag=vhpoet0ca-21" target="_blank" class="buy_now_button"> BUY NOW </a>
+        </div>
+    </DIV>
+    <DIV class="footer_container">
+        <div class="grid">
+            <section class="left_col">
+                <div class="rect">
+                    <article>
+                        <a href="index.html">CLASS INFO</a>
+                    </article>
+                    <article>
+                        <a href="index.html">CONTACT US</a>
+                    </article>
+                    <article>
+                        <a href="index.html">PRIVACY POILCY</a>
+                    </article>
+                    <article>
+                        <a href="index.html">TERMS</a>
+                    </article>
+                </div>
+            </section>
+            <section class="right_col">
+                <div class="rect">
+                    <article>
+                        <p>Built By Zahra Rahimi. Still half-CE-sutdent at AUT</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </DIV>
+    <!-- </div> -->
+</body>
+</html>

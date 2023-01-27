@@ -1,0 +1,866 @@
+/* @import "../menuIcon/style.css"; */
+/* @import "" */
+
+body{
+    /* header */
+    background-color: antiquewhite;
+    color: rgb(254, 255, 253);
+    font-family: "Poppins", sans-serif;
+    overflow: auto;
+    height: 98vh;
+    width: 100%;
+}
+
+
+.backgrounds div{
+    background-size:cover;
+    background-position:bottom;
+    /* background-attachment:scroll; */
+    background-repeat: no-repeat;
+}
+
+:root{
+    --margin_size: 2%;
+    --white: #f9f9f9;
+    --black: #36383F;
+    --grey: #85888C;
+    --blue:#40b2e3;
+}
+
+/* *************************************************************** MENU *********************************************************************** */
+
+.menu_container *{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.menu_container a{
+    text-decoration: none;
+}
+
+.menu_container ul{
+    list-style: none;
+}
+
+.menu_container{
+    position: fixed;
+    background-color: var(--blue);
+    box-shadow: 1px 1px 5px 0px var(--grey);
+    width: 99%;
+    height: 50px;
+    z-index: 100;
+    top: 0px;
+}
+
+.menu_container .logo{
+    position: sticky;
+    display: inline-block;
+    /* color: var(--white);
+    color: antiquewhite; */
+    font-size: 60px;
+    margin-left: 10px;
+    left: 90%;
+    height: 50px;
+    top: 500px;
+    /* left: 0; */
+    /* top:50px; */
+}
+
+.menu_container .navbar{
+    width: 99%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--blue);
+    overflow: hidden;
+    
+}
+/* .menu_container .menu{
+    position: absolute;
+} */
+
+.menu_container .menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+
+.menu_container .menu a:hover{
+    cursor: pointer;
+    background-color: var(--grey);
+}
+
+.menu_container .navbar{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.menu_container .icon{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.icon-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;   
+}
+
+.icon-line::before,
+ .icon-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 99%;
+}
+
+.icon-line::before{
+    top: 5px;
+}
+
+.icon-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .icon .icon-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .icon .icon-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .icon .icon-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+/* *************************************************************** HEADER ********************************************************************* */ 
+
+#header_container{
+    /* background-size:cover;
+    background-position: center;
+    background-blend-mode:lighten;  */
+    /* overflow: hidden; */
+    background-image: linear-gradient(to bottom, rgb(39, 27, 151),rgb(54, 49, 190), rgb(7, 79, 128)), url("images/Header.jpg");
+    background-blend-mode:lighten; 
+    background-size:cover;
+    background-position:bottom;
+    /* background-attachment:scroll; */
+    background-repeat: no-repeat;
+    height: 98vh;
+    width: 99%;
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+    /* overflow: auto; */
+    /* /* position: fixed; */
+    /* top: 0;
+    left: 0;  */
+}
+
+
+.header_content{
+    position: relative;
+    left: 25%;
+    /* align-items: center; */
+    display: inline-block;
+    /* margin: auto auto; */
+    text-align: center;
+    /* flex-direction: column; */
+    
+}
+
+.title {
+    font-size: 76px;
+    font-weight: bolder;
+}
+
+.title p{
+    position: relative;
+    letter-spacing: 20px;
+    /* color: aqua; */
+}
+
+.caption {
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.caption p{
+    position: relative;
+    letter-spacing: 15px;
+}
+
+@keyframes moving {
+    from {left: -600px;}
+    to {left: 0px;}
+}
+
+#header_container p::after,
+#header_container p::before,
+#header_container p  {
+    /* position: static; */
+
+    animation: moving 6s ;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+/* .header_container p::before{
+    position:static;
+
+} */
+
+.related_books {
+    position: relative;
+    background-color: white;
+    color: rgb(107, 107, 103);
+    font-weight: bold;
+    padding: 15px;
+    top: 50px;
+    border-radius: 50px 50px 50px 50px;
+    text-decoration: none;
+}
+
+.related_books:hover {
+    background-color: rgb(135, 187, 187);
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 1px 2px 1px 2px rgb(189, 189, 189);
+}
+
+/* *********************************************************** LECTURES************************************************************************* */
+
+
+#lectures_container {
+    background-image: linear-gradient(to bottom right, rgba(31, 161, 8, 0.7),rgba(68, 105, 240, 0.7), rgba(168, 94, 229, 0.7)), url("images/Background.jpg");
+    background-size:cover;
+    background-position: center;
+    /* background-blend-mode:lighten; */
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+
+    /* overflow: hidden; */
+    height: 98vh;
+    width: 99%;
+    overflow: auto;
+    /* position: fixed; */
+    top:98vh ;
+}
+
+
+.cards div{
+    position: relative;
+    top: 140px;
+    left: 220px;
+    width: calc((100% - (400px + 8 * var(--margin_size)))/4);
+    height: 400px;
+    float: left;
+    color: gray;
+    text-align: center;
+    opacity: 0.8;
+    /* border: var(--border-size) solid var(--background_color); */
+    box-sizing: border-box;
+    margin: auto var(--margin_size);
+}
+
+/* .cards {
+    position: fixed;
+    left: 15%;
+    top: 10%;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(4, 4fr);
+    color: gray;
+    text-align: center;
+    opacity: 0.8;
+    align-items:unset;
+    grid-auto-rows: 70vh;
+    margin: 100px;
+    gap: 30px;
+} */
+
+.cards :hover{
+    transform: scale(1.1);
+    opacity: 1;
+    transition: 0.7s;
+}
+
+.http {
+    position: relative;
+    top: 10%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid azure;
+    padding: 20px;
+    width: 70%;
+    height: 50vh;
+    margin: 50px;
+    background-color: azure;
+    /* justify-items: center; */
+}
+
+
+.html_css {
+    position: relative;
+    top: 10%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid azure;
+    padding: 20px;
+    width: 70%;
+    height: 50vh;
+    margin: 50px;
+    background-color: azure;
+}
+
+.js {
+    position: relative;
+    top: 10%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid azure;
+    padding: 20px;
+    width: 70%;
+    height: 50vh;
+    margin: 50px;
+    background-color: azure;
+}
+
+.golang{
+    position: relative;
+    top: 10%;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid azure;
+    padding: 20px;
+    width: 70%;
+    height: 50vh;
+    margin: 50px;
+    background-color: azure;
+}
+
+.cards img {
+    position: relative;
+    top: 5%;
+    opacity: 0.5;
+    width: 60%;
+    height: 25%;
+}
+
+/* ******************************************************************RELATED BOOKS*************************************************************** */
+
+#books_container {
+    
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    margin-bottom: 20px;
+}
+
+#books_container h1 {
+    color: rgb(5, 91, 220);
+    position: relative;
+    left: 40%;
+    top: 55px;
+}
+
+@keyframes coloredTitle {
+    from {color: rgb(35, 192, 209);}
+    to {color: rgb(5, 91, 220);}
+}
+  
+#books_container h1:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+    transition: 0.7s;
+    animation: coloredTitle 2s;
+}
+
+
+/* *********************************************** 
+***************** Left Card **********************
+**************************************************/
+.left_card {
+    position: relative;
+    top: -10px;
+    left: 100px;
+    width: calc((100% - (650px + 6 * var(--margin_size)))/3);
+    box-sizing: border-box;
+    height: 450px;
+    float: left;
+    margin: auto var(--margin_size);
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    /* border-radius: 2px 2px 2px 2px; */
+    /* box-shadow: 1px 2px 1px 2px rgb(66, 18, 18); */
+
+}
+
+.left_card:hover{
+    transform: rotateY( 180deg ) ;
+    transition: transform 1s;
+}
+
+.js_guide, .js_info{
+    position: absolute;
+    /* top: 10%; */
+    left: 100px;
+    border-radius: 2px 2px 2px 2px;
+    /* box-shadow: 1px 2px 1px 2px rgb(189, 189, 189); */
+    padding: 20px;
+    box-shadow: 1px 1px 10px 0px var(--grey);
+
+    width: 70%;
+    height: 50vh;
+    top: 50px;
+    margin: 50px;
+    background-color: azure;
+    border: 1px solid azure;
+    backface-visibility:hidden;
+}
+
+/* .js_guide{
+    left: 100px;
+} */
+
+.js_info {
+    /* left: 100px; */
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+}
+
+/* JAVA Script card setting */
+.js_guide img{
+    background-image: linear-gradient(to right, rgb(49, 103, 88),rgb(57, 151, 95),rgb(11, 116, 37)), url("images/Book1-2.png");
+    background-size:cover;
+    background-position: center;
+    background-blend-mode:color-dodge; 
+}
+.js_guide .on_pic1{
+    font-size: 24px;
+    padding: 4px;
+    position: absolute;
+    left: 44%;
+    top: 23%;
+    border: 1px solid  rgb(40, 205, 158);
+    background-color:  rgb(40, 205, 158);
+    opacity: 0.8;
+    color: white;
+}
+.js_guide .on_pic2{
+    font-size: 24px;
+    padding: 4px;
+    position: absolute;
+    left: 73%;
+    top: 31%;
+    border: 2px solid  rgb(40, 205, 158);
+    background-color:  rgb(40, 205, 158);
+    opacity: 0.8;
+    color: white;
+}
+
+/******************************************* 
+**************Middle Card*******************
+********************************************/
+
+.middle_card {
+    position: relative;
+    top: 40px;
+    left: 300px;
+    width: calc((100% - (650px + 6 * var(--margin_size)))/3);
+    height: 450px;
+    float: left;
+    box-sizing: border-box;
+    margin: auto var(--margin_size);
+    text-align: center;
+    /* backface-visibility: hidden; */
+    /* border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 2px 1px 2px rgb(189, 189, 189); */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.middle_card:hover{
+    transform: rotateY( 180deg ) ;
+    transition: transform 1s;
+}
+
+.react_guide, .react_info{
+    position: absolute;
+    /* top: 10%; */
+    left: 100px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 2px 1px 2px rgb(189, 189, 189);
+    box-shadow: 1px 1px 10px 0px var(--grey);
+
+    padding: 20px;
+    width: 70%;
+    height: 50vh;
+    margin: 50px;
+    background-color: azure;
+    border: 1px solid azure;
+    backface-visibility:hidden;
+}
+
+/* .react_guide{
+    left: 100px;
+} */
+
+.react_info{
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+}
+
+/* REACT card setting */
+.react_guide img{
+    background-image: linear-gradient(to right, rgb(118, 158, 227),rgb(13, 159, 164),rgba(28, 80, 202, 0.421)), url("images/Book2-2.jpg");
+    background-size:cover;
+    background-position: center;
+    background-blend-mode:color-dodge; 
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+.react_guide .on_pic1{
+    font-size: 24px;
+    padding: 4px;
+    position: absolute;
+    width: 120px;
+    left: 55%;
+    top: 23%;
+    border: 1px solid  rgb(14, 92, 131);
+    background-color:  rgb(14, 92, 131);
+    opacity: 0.9;
+    color: white;
+}
+.react_guide .on_pic2{
+    font-size: 24px;
+    padding: 4px;
+    position: absolute;
+    left: 71%;
+    top: 31%;
+    border: 2px solid  rgb(14, 92, 131);
+    background-color:  rgb(14, 92, 131);
+    opacity: 0.8;
+    color: white;
+}
+
+/******************************************* 
+**************Right Card*******************
+********************************************/
+.right_card {
+    position: relative;
+    top: 40px;
+    left: 500px;
+    width: calc((100% - (650px + 6 * var(--margin_size)))/3);
+    height: 450px;
+    float: left;
+    box-sizing: border-box;
+    margin: auto var(--margin_size);
+    text-align: center;
+    /* backface-visibility: hidden; */
+    /* border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 2px 1px 2px rgb(189, 189, 189); */
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.right_card:hover{
+    transform: rotateY( 180deg ) ;
+    transition: transform 1s;
+}
+
+.go_guide, .go_info{
+    position: absolute;
+    /* top: 10%; */
+    left: 100px;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 1px 2px 1px 2px rgb(189, 189, 189);
+    box-shadow: 1px 1px 10px 0px var(--grey);
+
+    padding: 20px;
+    width: 70%;
+    height: 50vh;
+    margin: 50px;
+    background-color: azure;
+    border: 1px solid azure;
+    backface-visibility:hidden;
+}
+
+.go_info {
+    /* left: 100px; */
+    background: #03446A;
+    color: white;
+    transform: rotateY( 180deg );
+}
+
+/* GOLANG card setting */
+.go_guide img{
+    background-image: linear-gradient(to right, rgb(156, 40, 205),rgb(163, 37, 236),rgb(162, 30, 160)), url("images/Book3-2.png");
+    background-size:cover;
+    background-position: center;
+    background-blend-mode:color-dodge; 
+}
+.go_guide .on_pic1{
+    font-size: 24px;
+    padding: 4px;
+    position: absolute;
+    left: 35%;
+    top: 23%;
+    border: 1px solid   rgb(156, 40, 205);
+    background-color:  rgb(156, 40, 205);
+    opacity: 0.9;
+    color: white;
+}
+.go_guide .on_pic2{
+    font-size: 24px;
+    padding: 4px;
+    position: absolute;
+    left: 85%;
+    top: 31%;
+    border: 2px solid   rgb(156, 40, 205);
+    background-color:   rgb(156, 40, 205);
+    opacity: 0.8;
+    color: white;
+}
+
+/* ****************************************** */
+.guide_cards img{
+    position: relative;
+    top: -5%; 
+    left: -20px;
+    /* opacity: 0.5; */
+    width: 125%;
+    height: 42%;
+}
+.cost{
+    font-size:x-large;
+    font-weight: bold;
+}
+
+.button_des{
+    position: relative;
+    top: 20%;
+    font-size: 20px;
+}
+
+.buy_button {
+    position: relative;
+    font-weight: bold;
+
+    top: 40%;
+    width: 80%;
+    margin: auto;
+    display: inline-block;
+    color:#03446A;
+    background-color: white;
+    border: 3px solid aqua;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.discription{
+    color: gray;
+}
+
+/* pop up setting */
+
+.pop_up{
+    display: flex;
+    position: fixed;
+    height: 50vh;
+    width: 50%;
+    z-index: 1000;
+    top: 20%;
+    left: 25%;
+    background-color:rgb(14, 92, 131);
+    opacity: 0.4;
+    visibility: hidden;
+    transition: all 0.5s;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.close,
+.close:link,
+.close:visited
+{
+    color: #ccc;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 2.5rem;
+    display: inline-block;
+    line-height: 1;
+    transition: all 0.2s;
+}
+
+.close:hover{
+    color: rgb(9, 104, 148);
+}
+
+.pop_up:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* .pop_up:target .js_book_info{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+} */
+.pop_up img{
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.js_book_pic{
+    background-image: url("images/Book1-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-dodge; 
+    width: 350%;
+    height: 100%;
+}
+.react_book_pic{
+    background-image: url("images/Book2-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-dodge; 
+    width: 250%;
+    height: 100%;
+}
+.go_book_pic{
+    background-image: url("images/Book3-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-dodge; 
+    width: 300%;
+    height: 100%;
+}
+
+.buy_now_button{
+    display: inline-block;
+    width: 150%;
+    position: relative;
+    font-weight: bold;
+    top: 40%;
+    left: -25%;
+    /* width: 80%; */
+    margin: auto;
+    display: inline-block;
+    color:#03446A;
+    background-color: antiquewhite;
+    border: 3px solid antiquewhite;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;   
+    text-align: center;
+}
+
+.js_book_info p, .react_book_info p, .go_book_info p{
+    position: relative;
+    top: -15px;
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.js_book_info p, .go_book_info p{
+    width: 100%;
+}
+.react_book_info p{
+    width: 140%;
+    /* text-align:j; */
+
+}
+
+.js_book_info h4, .react_book_info h4, .go_book_info h4{
+    position: relative;
+    top: 10px;
+    left: 30px;
+    color: aqua;
+    font-weight: bold;
+}
+#books_container li {
+    position: relative;
+    left: 50px;
+    top: -30px;
+}
+
+/* ******************************************************************FOOTER********************************************************************* */
+.footer_container{
+    color: aliceblue;
+    height: 25%;
+    background-color: rgb(60, 60, 69);
+    font-size: 14px;
+    width: 99%;
+    height: 20vh;
+}
+
+.footer_container .grid section{
+    position: relative;
+    margin: 40px;
+    left: 80px;
+    top: 50%;
+    width: calc((100% - (200px + 4 * 2%))/2);
+    /* height: 70%; */
+    float: left;
+    /* border: var(--border-size) solid var(--background_color); */
+    box-sizing: border-box;
+    /* margin: auto var(--margin_size); */
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: row; */
+    text-align: center;
+    /* padding: 10px;   */
+    /* border: 2px solid rgb(60, 60, 69); */
+    /* border-radius: ; */
+    padding: 1px;
+    box-shadow: 10px 2px 10px 2px rgb(84, 84, 94);
+}
+
+.footer_container .left_col .rect article{
+    position: relative;
+    margin: 5px;
+    left: 15%;
+    /* top: 10%; */
+    width: calc((100% - (100px + 8 * var(2%)))/4);
+    /* height: 70%; */
+    float: left;
+    /* border: var(--border-size) solid var(--background_color); */
+    box-sizing: border-box;
+    padding: 9px;
+}
+
+.footer_container a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footer_container a:hover{
+    color: aqua;
+}
