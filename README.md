@@ -2,7 +2,7 @@
 Final prject of Web Programming course is implementing front-end web page that includes these sections:
 
 * Header
-![header](https://user-images.githubusercontent.com/93929227/218514260-0df716eb-6b35-4603-85f8-4c16b0702d1c.PNG)
+![header](https://user-images.githubusercontent.com/93929227/218514615-45add103-f406-4433-9dc9-d316e52ee71f.PNG)
 
 * Lectures
 ![Lectures](https://user-images.githubusercontent.com/93929227/218514307-e187d756-f0ce-4846-bb1d-cb1386b4d878.PNG)
@@ -15,4 +15,4 @@ Final prject of Web Programming course is implementing front-end web page that i
 ![menu](https://user-images.githubusercontent.com/93929227/218514393-63a32908-eeda-40f9-9df4-ac9db4c4273f.PNG)
 
 * Footer
-![footee](https://user-images.githubusercontent.com/93929227/218514413-2e155e0c-02f4-46cf-b976-ae264e7c083b.PNG)
+![footee](https://user-images.githubusercontent.com/93929227/218514715-2528fbc4-f1a3-4d03-9ed8-56d788b1b51c.PNG)
