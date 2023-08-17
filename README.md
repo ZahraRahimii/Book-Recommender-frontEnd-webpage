@@ -1,5 +1,5 @@
 # Book Recommender front-end webpage
-Final prject of Web Programming course is implementing [front-end of a booke recommender web page](https://zahrarahimii.github.io/Book-Recommender-frontEnd-webpage/) that includes these sections
+Final prject of Web Programming course is implementing [front-end of a book recommender web page](https://zahrarahimii.github.io/Book-Recommender-frontEnd-webpage/) that includes these sections
 
 * Header
 ![header](https://user-images.githubusercontent.com/93929227/218514615-45add103-f406-4433-9dc9-d316e52ee71f.PNG)
